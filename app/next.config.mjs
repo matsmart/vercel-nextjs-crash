@@ -22,9 +22,6 @@ const config = {
     ],
     formats: ['image/avif', 'image/webp'],
   },
-  webpack: (config) => {
-    return config
-  },
 }
 
 export default config
