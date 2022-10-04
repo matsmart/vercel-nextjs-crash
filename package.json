@@ -4,5 +4,8 @@
   "workspaces": [
     "app",
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "vercel": "^28.4.6"
+  }
 }
