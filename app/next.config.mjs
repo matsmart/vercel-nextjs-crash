@@ -66,5 +66,3 @@ const config = {
 }
 
 export default withBundleAnalyzer(config)
-
-module.exports = nextConfig
