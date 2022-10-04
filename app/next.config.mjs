@@ -1,4 +1,6 @@
 import bundleAnalyzer from '@next/bundle-analyzer'
+import transpileModules from 'next-transpile-modules'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -10,11 +12,11 @@ const withBundleAnalyzer = bundleAnalyzer({
   openAnalyzer: false,
 })
 
-// const withTranspileModules = transpileModules([
-//   '@findify/sdk',
-//   '@findify/analytics',
-//   '@findify/change-emitter',
-// ])
+const withTranspileModules = transpileModules([
+  '@findify/sdk',
+  // '@findify/analytics',
+  // '@findify/change-emitter',
+])
 
 /**
  * @type {import('next').NextConfig}
@@ -65,4 +67,4 @@ const config = {
   },
 }
 
-export default withBundleAnalyzer(config)
+export default withTranspileModules(withBundleAnalyzer(config))

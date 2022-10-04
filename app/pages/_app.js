@@ -1,7 +1,9 @@
 import '../styles/globals.css'
+import { getClient } from '../utils'
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  const client = getClient()
+  return <Component {...pageProps} client={client} />
 }
 
 export default MyApp
