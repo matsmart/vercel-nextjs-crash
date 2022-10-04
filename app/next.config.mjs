@@ -1,14 +1,14 @@
-import bundleAnalyzer from '@next/bundle-analyzer'
+// import bundleAnalyzer from '@next/bundle-analyzer'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
 }
 
-const withBundleAnalyzer = bundleAnalyzer({
-  enabled: true,
-  openAnalyzer: false,
-})
+// const withBundleAnalyzer = bundleAnalyzer({
+//   enabled: false,
+//   openAnalyzer: false,
+// })
 
 // const withTranspileModules = transpileModules([
 //   '@findify/sdk',
@@ -65,4 +65,4 @@ const config = {
   },
 }
 
-export default withBundleAnalyzer(config)
+export default config
